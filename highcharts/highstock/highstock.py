@@ -68,6 +68,7 @@ class Highstock(object):
         "https://code.highcharts.com/modules/annotations-advanced.js" ,
         "https://code.highcharts.com/modules/price-indicator.js" ,
         "https://code.highcharts.com/modules/full-screen.js" ,
+        "http://code.highcharts.com/modules/exporting.js",
         "https://code.highcharts.com/modules/stock-tools.js" ,
             ]
 
