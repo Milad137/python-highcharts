@@ -61,17 +61,22 @@ class Highstock(object):
         
         # set Javascript src, Highcharts lib needs to make sure it's up to date
         self.JSsource = [
-                'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
-                'https://code.highcharts.com/stock/6/highstock.js',
-                'https://code.highcharts.com/stock/6/modules/exporting.js',
-                'https://code.highcharts.com/6/highcharts-more.js',
+        "https://code.jquery.com/jquery-3.1.1.min.js" ,
+        "https://code.highcharts.com/stock/highstock.js" ,
+        "https://code.highcharts.com/stock/indicators/indicators-all.js" ,
+        "https://code.highcharts.com/stock/modules/drag-panes.js" ,
+        "https://code.highcharts.com/modules/annotations-advanced.js" ,
+        "https://code.highcharts.com/modules/price-indicator.js" ,
+        "https://code.highcharts.com/modules/full-screen.js" ,
+        "https://code.highcharts.com/modules/stock-tools.js" ,
             ]
 
         # set CSS src
         self.CSSsource = [
-                'https://www.highcharts.com/highslide/highslide.css',
+                'https://code.highcharts.com/css/stocktools/gui.css',
+                'https://code.highcharts.com/css/annotations/popup.css',
 
-            ]
+            ]        
         # set data
         self.data = []
         self.data_temp = []
