@@ -5,6 +5,16 @@
         {% for header_element in chart.header_css+chart.header_js %}
         {{ header_element }}
         {% endfor %}
+        <style>
+            #container {
+                max-height: 800px;
+                height: 100vh;
+            }
+            /* Conflict with Bootstrap, not needed after v7.0.1 */
+            .highcharts-bindings-wrapper * {
+                box-sizing: content-box;
+            }
+        </style>
     </head>
     <body style="margin:0;padding:0">
         {{ chart.content }}
