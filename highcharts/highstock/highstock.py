@@ -374,7 +374,7 @@ class Highstock(object):
         htmlsrcdoc = html.escape(self.htmlcontent)
         htmlsrcdoc = re.sub('\\n', ' ', htmlsrcdoc)
         htmlsrcdoc = re.sub(' +', ' ', htmlsrcdoc)
-        width = int(self.options['chart'].__dict__['width']) if self.options['chart'].__dict__.get('width') else 820
+        width = int(self.options['chart'].__dict__['width']) if self.options['chart'].__dict__.get('width') else "100%"
         height = int(self.options['chart'].__dict__['height']) if self.options['chart'].__dict__.get('height') else 520
         
         if self.options['chart'].__dict__.get('options3d'):
